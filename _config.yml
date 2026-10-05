@@ -1,0 +1,35 @@
+# Site-wide settings. Edit freely; restart `jekyll serve` after changing this file.
+title: "Léon Burkhardt"
+author: "Léon Burkhardt"
+description: "Personal homepage of Léon Burkhardt, PhD in topological data analysis."
+lang: "en"
+
+# Deployment. For https://username.github.io/repo set:
+#   url: "https://username.github.io"
+#   baseurl: "/repo"
+# For a user/organisation site (https://username.github.io) leave baseurl empty.
+url: "https://example.org"
+baseurl: ""
+
+# Optional: manual override for the footer date ("02 Sep 2026" format is applied automatically).
+# last_updated: 2026-09-02
+
+# Optional: absolute or site-relative path to a social preview image (used for og:image).
+# og_image: "/assets/img/portrait.svg"
+
+# Markdown (GitHub Pages default)
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Files that should never end up in the built site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .jekyll-cache
+  - .sass-cache

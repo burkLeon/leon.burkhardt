@@ -1,0 +1,32 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {%- comment %} Title: "Page — Site", collapsed to just the site title on the home page {% endcomment -%}
+  {%- assign page_title = page.title | default: site.title -%}
+  {%- if page_title == site.title -%}
+    {%- assign full_title = site.title -%}
+  {%- else -%}
+    {%- assign full_title = page_title | append: " — " | append: site.title -%}
+  {%- endif -%}
+  <title>{{ full_title }}</title>
+
+  {%- assign desc = page.description | default: site.description -%}
+  <meta name="description" content="{{ desc | strip_html | strip_newlines | escape }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <meta property="og:title" content="{{ full_title | escape }}">
+  <meta property="og:description" content="{{ desc | strip_html | strip_newlines | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:locale" content="{{ site.lang | default: 'en' | replace: '-', '_' }}">
+  {%- if site.og_image %}
+  <meta property="og:image" content="{{ site.og_image | absolute_url }}">
+  {%- endif %}
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>

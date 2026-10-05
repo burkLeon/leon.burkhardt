@@ -1,0 +1,19 @@
+{%- comment %} Two-column contact table, driven by _data/contact.yml {% endcomment -%}
+<table class="contact">
+  <tbody>
+  {%- for row in site.data.contact %}
+    <tr>
+      <th scope="row">{{ row.label }}</th>
+      <td>
+        {%- if row.email -%}
+          <span class="email" data-user="{{ row.email.user }}" data-domain="{{ row.email.domain }}">{{ row.email.user }} (at) {{ row.email.domain }}</span>
+        {%- elsif row.url -%}
+          <a href="{{ row.url }}">{{ row.text | default: row.url | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a>
+        {%- else -%}
+          {{ row.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}
+        {%- endif -%}
+      </td>
+    </tr>
+  {%- endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 180 220"
+   width="180"
+   height="220"
+   role="img"
+   aria-label="Placeholder portrait"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="portrait.svg"
+   inkscape:version="1.4.4 (1:1.4.4+202605061436+dcaf3e7d9e)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.0136364"
+     inkscape:cx="90.090498"
+     inkscape:cy="110"
+     inkscape:window-width="1486"
+     inkscape:window-height="891"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <rect
+     width="180"
+     height="220"
+     fill="#eeeeee"
+     id="rect1" />
+  <circle
+     cx="90"
+     cy="82"
+     r="38"
+     fill="#cccccc"
+     id="circle1" />
+  <path
+     d="M20 220 C20 155 55 132 90 132 C125 132 160 155 160 220 Z"
+     fill="#cccccc"
+     id="path1" />
+  <path
+     style="fill:none;stroke:#ea253d;stroke-width:1.13386;stroke-linecap:round;stroke-opacity:0.979556"
+     d="m 64.042232,96.892911 c 18.461538,17.476119 34.610357,17.476119 48.446458,0"
+     id="path2"
+     sodipodi:nodetypes="cc" />
+</svg>

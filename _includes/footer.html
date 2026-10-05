@@ -1,0 +1,8 @@
+{%- comment %} `last_updated` in _config.yml wins; otherwise the build time is used {% endcomment -%}
+{%- assign stamp = site.last_updated | default: site.time -%}
+<footer>
+  <p class="muted">
+    Last updated {{ stamp | date: "%d %b %Y" }}.<br>
+    External links may be out of date.
+  </p>
+</footer>

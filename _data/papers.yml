@@ -1,0 +1,74 @@
+# Papers, grouped. Groups render in the order given here; empty groups are skipped.
+# Items render in file order — keep NEWEST FIRST.
+#
+# Group fields: id (anchor slug), title, items
+# Item fields:
+#   key:     amsalpha-style citation label, e.g. "DL24" (author initials + 2-digit year).
+#            Shown in brackets before the entry. Omit it and nothing is shown.
+#   title:   paper title (inline Markdown allowed)
+#   authors: list of names; omit or leave empty for single-author work
+#   venue:   journal / conference / institution, may include volume and pages
+#   year:    year of publication
+#   note:    optional, e.g. "Under revision"
+#   links:   optional list of { label, url }
+#
+# Example:
+#   - key: "Doe26"
+#     title: "A new bound for *k*-sets"
+#     authors: ["Jane Doe"]
+#     venue: "Journal of Example Mathematics, 12(3):211–240"
+#     year: 2026
+#     links:
+#       - { label: "arXiv", url: "https://arxiv.org/abs/0000.00000" }
+
+# - id: "preprints"
+#   title: "Preprints"
+#   items:
+#     - key: "DKN26"
+#       title: "Sparse cut systems in random simplicial complexes"
+#       authors: ["Jane Doe", "Aris Kaplan", "Nils Nyberg"]
+#       venue: "Preprint"
+#       year: 2026
+#       note: "Submitted"
+#       links:
+#         - { label: "arXiv", url: "https://arxiv.org/abs/2601.00123" }
+#         - { label: "PDF", url: "https://example.org/papers/sparse-cut-systems.pdf" }
+
+- id: "journal-publications"
+  title: "Journal publications"
+  items:
+    - key: "Bur26"
+      title: "Weight 11 compactly supported cohomology of moduli spaces of curves in excess four"
+      # authors: [] # "Léon Burkhardt"
+      venue: "Homology, Homotopy and Applications, 28(1):125–139"
+      year: 2026
+      # note: "Under revision for a corrigendum"
+      links:
+        - { label: "DOI", url: "https://doi.org/10.4310/hha.2026.v28.n1.a6" }
+    - key: "BBP24"
+      title: "Ore extensions of commutative rings and the Dixmier-Moeglin equivalence"
+      venue: "Recent Advances in Noncommutative Algebra and Geometry, 801(1)"
+      year: 2024
+      links:
+        - { label: "DOI", url: "https://doi.org/10.1090/conm/801/16035" }
+
+# - id: "conference-papers"
+#   title: "Conference papers"
+#   items:
+#     - key: "DO24"
+#       title: "Approximating the discrete Fréchet distance in near-linear time"
+#       authors: ["Jane Doe", "Peter Olsen"]
+#       venue: "Proceedings of the 40th Symposium on Example Computational Geometry (SoECG), pages 22:1–22:15"
+#       year: 2024
+#       links:
+#         - { label: "DOI", url: "https://doi.org/10.0000/soecg.2024.22" }
+
+# - id: "thesis"
+#   title: "Thesis"
+#   items:
+#     - key: "Doe22"
+#       title: "Combinatorial rigidity of sparse frameworks"
+#       venue: "PhD thesis, Example University"
+#       year: 2022
+#       links:
+#         - { label: "PDF", url: "https://example.org/papers/thesis.pdf" }

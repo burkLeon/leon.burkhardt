@@ -1,0 +1,24 @@
+# Navigation rows, one list per page.
+# A page picks its row with the front-matter key `nav:` (e.g. `nav: home`).
+#
+# Each item has:
+#   label: text shown in the link row
+#   url:   "#anchor" for in-page anchors, or "/page/" for internal pages
+#          (internal paths are passed through `relative_url`, so a baseurl works)
+#
+# Example of adding a new page:
+#   1. create `notes.md` with front matter `layout: default`, `nav: notes`
+#   2. add a `notes:` list below
+#   3. add `{ label: "notes", url: "/notes/" }` to the `home:` list
+
+home:
+  - label: "papers"
+    url: "#papers"
+  - label: "talks"
+    url: "#talks"
+  # - label: "misc"
+  #   url: "/misc/"
+
+misc:
+  - label: "home"
+    url: "/"

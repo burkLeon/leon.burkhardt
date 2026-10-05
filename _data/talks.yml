@@ -1,0 +1,31 @@
+# Talks, one flat list in file order — keep NEWEST FIRST.
+#
+# Item fields:
+#   title:     talk title (inline Markdown allowed)
+#   event:     name of the conference, seminar or workshop
+#   event_url: optional link for the event name
+#   date:      YYYY-MM-DD, rendered like "September 8, 2025"
+#   place:     city / institution
+#   links:     optional list of { label, url }, e.g. slides or video
+#
+# Example:
+#   - title: "A short talk"
+#     event: "Example Seminar"
+#     date: 2026-01-15
+#     place: "Someplace"
+
+- title: "From local to global in random directed graphs"
+  event: "Homology and Homotopy in the World of Graphs"
+  event_url: "https://sites.google.com/view/hhgraphs/?pli=1&authuser=0"
+  date: 2026-09-14
+  place: "Bernoulli center, EPFL, Lausanne"
+  links:
+    - { label: "slides", url: "https://drive.google.com/uc?id=1WsDf4CmQWNG6QsLCyFVK2ghlA2NXQc-o" }
+    
+- title: "Understanding Network Structure - The example of Gene Regulatory Networks"
+  event: "Digital Futures Young Scientist Conference"
+  event_url: "https://www.digitalfutures.kth.se/event/digital-futures-young-scientist-conference-4/"
+  date: 2026-03-12
+  place: "Digital Futures, Stockholm"
+  links:
+    - { label: "poster", url: "https://drive.google.com/uc?id=1xmqKOWhWDVD9Oiv73KfC6E1t0U-3ElkR" }

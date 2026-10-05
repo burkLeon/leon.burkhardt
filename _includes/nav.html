@@ -1,0 +1,18 @@
+{%- comment %}
+  Renders the link row for the list named by the page's `nav:` front matter,
+  e.g. `nav: home` uses `_data/nav.yml` -> `home:`.
+  URLs starting with "#" are left alone; everything else gets `relative_url`.
+{% endcomment -%}
+{%- assign items = site.data.nav[page.nav] -%}
+{%- if items and items.size > 0 %}
+<nav>
+  {%- for item in items -%}
+    {%- if item.url contains '#' -%}
+      {%- assign href = item.url -%}
+    {%- else -%}
+      {%- assign href = item.url | relative_url -%}
+    {%- endif -%}
+    <a href="{{ href }}">{{ item.label }}</a>{% unless forloop.last %} · {% endunless %}
+  {%- endfor %}
+</nav>
+{%- endif %}

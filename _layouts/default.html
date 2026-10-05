@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+
+  <header>
+    <h1>{{ page.title | default: site.title }}</h1>
+
+    {%- if page.photo %}
+    <p>
+      <img src="{{ page.photo | relative_url }}" alt="{{ page.photo_alt | default: 'Portrait photo' }}" width="180">
+      {%- if page.photo_credit %}
+      <br><span class="muted">{{ page.photo_credit | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+      {%- endif %}
+    </p>
+    {%- endif %}
+
+    {% include nav.html %}
+  </header>
+
+  <main>
+    {%- comment %} Contact table only renders when the page asks for it {% endcomment -%}
+    {%- if page.contact %}{% include contact.html %}{% endif %}
+
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>

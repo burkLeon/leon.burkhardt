@@ -1,0 +1,27 @@
+# Contact table rows, rendered in this order as a two-column table.
+#
+# Each row has a `label` plus ONE of:
+#   text: "plain text (inline Markdown allowed)"
+#   url: "https://..." together with text: "link text"
+#   email: { user: "jane.doe", domain: "example.org" }   # obfuscated, see README
+#
+# Example:
+#   - label: "Mastodon"
+#     url: "https://mastodon.example.org/@jane"
+#     text: "@jane"
+
+- label: "Email"
+  email:
+    user: "leonbu"
+    domain: "kth.se"
+
+# - label: "Office"
+#   text: "Room 4.118, Institute of Mathematics, Example University, 100 44 Someplace"
+
+# - label: "GitHub"
+#   url: "https://github.com/burkLeon"
+#   text: "github.com/burkLeon"
+
+- label: "Profiles"
+  text: " · [arXiv](https://arxiv.org/a/burkhardt_l_1) · [GitHub](https://github.com/burkLeon) · [Linkedin](https://www.linkedin.com/in/leonburkhardt/) "
+  # [ORCID](https://orcid.org/0009-0003-0248-8863)
